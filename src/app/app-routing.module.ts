@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TreeComponent } from './tree/tree.component';
-
+import { TableComponent } from './table/table.component';
 const routes: Routes = [
   { path: '', redirectTo: '/apps/dashboard', pathMatch: 'full' },
   {
@@ -17,6 +17,10 @@ const routes: Routes = [
       {
         path: 'apps/tree',
         component: TreeComponent
+      },
+      {
+        path: 'apps/table',
+        component: TableComponent
       },
     ]
   }
